@@ -1,4 +1,2 @@
-# git-test
-hellooo odin
-hello?
-heloooo?
+# landing-page
+a fan page of the show 'The Bear' 
