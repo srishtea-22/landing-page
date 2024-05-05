@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
+* {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -10,7 +14,6 @@ body {
     background-color: rgba(38,28,26,255);
     color: white;
     display: flex;
-    font-family: 'Lexend Deca', sans-serif;
     font-size: 18px;
 }
 
@@ -25,14 +28,18 @@ body {
     padding-top: 20px;
     flex-shrink: 0;
 }
-.left div, .button{
+
+.left div, .button {
     font-size: 18px;
 }
-.button{
+
+.button {
+    cursor: pointer;
     padding: 5px 10px;
     border-radius: 8px;
     font-family: 'Lexend Deca', sans-serif;
 }
+
 .left {
     display: flex;
     flex-direction: column;
@@ -43,6 +50,7 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 ul {
     display: flex;
     list-style: none;
@@ -61,10 +69,27 @@ img {
     height: 200px;
 }
 
+.content {
+    margin-bottom: 25px;
+}
 .content img {
     border-radius: 50%;
 }
 
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.cast {
+    max-width: 200px;
+    text-align: center;
+}
+
+span {
+    color: red;
+    text-align: left;
+}
 .right img {
     height: 300px;
     margin-top: -60px;
@@ -81,4 +106,6 @@ img {
 
 h2 {
     text-align: center;
+    font-size: 30px;
+    font-weight: 600;
 }
