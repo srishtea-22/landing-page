@@ -26,7 +26,19 @@ body {
     height: 100px;
     padding-left: 325px;
     padding-top: 20px;
-    flex-shrink: 0;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+ul li a {
+    display: flex;
+    padding-right: 30px;
+    text-decoration: none;
+    color: white;
 }
 
 .left div, .button {
@@ -51,24 +63,11 @@ body {
     margin-left: 20px;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: nowrap;
 }
-
-ul {
-    display: flex;
-    list-style: none;
-    margin-top: 10px;
-    margin-bottom: 0;
-}
-
-ul li a {
-    display: flex;
-    padding-right: 30px;
-    text-decoration: none;
-    color: white;
-}
-
-img {
-    height: 200px;
+.right img {
+    height: 300px;
+    margin-top: -60px;
 }
 
 .content {
@@ -76,10 +75,12 @@ img {
 }
 .content img {
     border-radius: 50%;
+    height: 200px;
 }
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
 }
@@ -91,10 +92,6 @@ img {
 span {
     color: red;
     text-align: left;
-}
-.right img {
-    height: 300px;
-    margin-top: -60px;
 }
 
 .footer {
